@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/steven-the-qa/cypress-web-automation#readme",
   "devDependencies": {
-    "cypress": "^13.13.3"
+    "cypress": "^13.13.3",
+    "typescript": "^5.5.4"
   }
 }
