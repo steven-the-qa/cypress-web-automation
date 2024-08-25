@@ -9,8 +9,8 @@ describe("User Login Flow", () => {
     cy.visit("https://www.demoblaze.com/");
     cy.get("#login2").click();
     cy.get("#logInModal").should("be.visible");
-    cy.get("#loginusername").clear().type(username);
-    cy.get("#loginpassword").clear().type(password);
+    cy.get("#loginusername").clear().type(username, { delay: 50 });
+    cy.get("#loginpassword").clear().type(password, { delay: 50 });
     cy.get(".btn-primary").contains("Log in").click();
     cy.wait("@loginAPI").then((object) => {
       expect(object.response.statusCode).to.eq(200);
